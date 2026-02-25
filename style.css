@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 12px 30px;
+    background-color: #0a192f;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 3px;
+    object-fit: contain;
+    border: 2px solid #f39c12;
+}
+
+.navbar-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.navbar-menu a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.navbar-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.nav-btn {
+    background-color: #e74c3c !important;
+    color: white !important;
+    padding: 8px 20px !important;
+    border-radius: 20px !important;
+    font-weight: 600 !important;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 25, 47, 0.7);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    max-width: 700px;
+}
+
+.hero-subtitle {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.hero-title {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-title span {
+    color: #f39c12;
+}
+
+.hero-desc {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: #f39c12;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.hero-btn:hover {
+    background-color: #e67e22;
+}
+
+.section {
+    padding: 60px 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.bg-light {
+    background-color: #eef5fb;
+    max-width: 100%;
+    padding-left: calc((100% - 1040px) / 2);
+    padding-right: calc((100% - 1040px) / 2);
+}
+
+.section-title {
+    font-size: 26px;
+    color: #1a5276;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.profil-container {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.profil-img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.profil-text {
+    flex: 1;
+    min-width: 260px;
+}
+
+.profil-text p {
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: 14px;
+    color: #444;
+}
+
+.jurusan-card {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    align-items: center;
+    flex-wrap: wrap;
+    border-left: 4px solid #1a5276;
+}
+
+.jurusan-img {
+    width: 180px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.jurusan-info {
+    flex: 1;
+    min-width: 240px;
+}
+
+.jurusan-info h3 {
+    font-size: 17px;
+    color: #1a5276;
+    margin-bottom: 8px;
+}
+
+.jurusan-info p {
+    font-size: 13px;
+    margin-bottom: 6px;
+    text-align: justify;
+    color: #555;
+}
+
+.tabel-container {
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    background-color: white;
+}
+
+thead th {
+    background-color: #1a5276;
+    color: white;
+    padding: 12px 14px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8fbfd;
+}
+
+.total-row {
+    background-color: #1a5276 !important;
+}
+
+.total-row td {
+    color: white;
+    font-weight: 600;
+    border-bottom: none;
+}
+
+.video-desc {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.video-container {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 56.25%;
+    height: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.kontak-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.kontak-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-top: 3px solid #1a5276;
+}
+
+.kontak-card h3 {
+    font-size: 16px;
+    color: #1a5276;
+    margin-bottom: 12px;
+}
+
+.kontak-card p {
+    font-size: 13px;
+    margin-bottom: 4px;
+    color: #666;
+}
+
+.sosmed-list {
+    list-style: none;
+}
+
+.sosmed-list li {
+    margin-bottom: 8px;
+}
+
+.sosmed-list a {
+    text-decoration: none;
+    color: #2e86c1;
+    font-size: 13px;
+}
+
+.sosmed-list a:hover {
+    color: #1a5276;
+}
+
+footer {
+    background-color: #0a192f;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 13px;
+}
+
+footer p {
+    margin-bottom: 4px;
+}
+
+.footer-brand {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .navbar-title {
+        font-size: 14px;
+    }
+
+    .navbar-menu a {
+        padding: 4px 6px;
+        font-size: 10px;
+    }
+
+    .nav-btn {
+        display: none !important;
+    }
+
+    .hero-title {
+        font-size: 26px;
+    }
+
+    .section {
+        padding: 30px 15px;
+    }
+
+    .bg-light {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .profil-container {
+        flex-direction: column;
+    }
+
+    .profil-img {
+        width: 100%;
+    }
+
+    .jurusan-card {
+        flex-direction: column;
+    }
+
+    .jurusan-img {
+        width: 100%;
+        height: 160px;
+    }
+
+    .kontak-container {
+        grid-template-columns: 1fr;
+    }
+}
