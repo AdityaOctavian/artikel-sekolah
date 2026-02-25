@@ -70,8 +70,8 @@ ARTIKELSEKOLAH/
 ---
 
 ## 👤 Dibuat Oleh
-
-Siswa Kelas **X RPL** — SMKN 4 Bojonegoro  
+Aditya Octavian
+Siswa Kelas **X RPL 1** — SMKN 4 Bojonegoro  
 Tugas Mata Pelajaran: **Pemrograman Terstruktur (Frontend)**  
 Tahun Ajaran **2025/2026**
 
